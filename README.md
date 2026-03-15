@@ -16,11 +16,8 @@ development configuration from the private build repo.
 
 ## Current published project
 
-- Device: `Stingray Battery Meter`
-- Board: `Seeed Studio XIAO ESP32-C3`
-- Chip family: `ESP32-C3`
-- Firmware version: `2025.12.27+4d24ee8`
-- Published build date: `2026-02-26`
+- Device: `AIRSOFT ENERGY INDICATOR (battery meter)`
+- Version, manifest, and binaries are published from the latest release build
 
 Current flash layout:
 
@@ -95,3 +92,9 @@ For PlatformIO-based ESP32 builds, the useful fields in `idedata.json` are:
 
 The landing page is data-driven, so additional projects only need a new folder
 and a new catalog entry.
+
+## Automation
+
+This repo can be updated by a GitHub Actions workflow in the private firmware
+repository. The workflow builds the latest `main` branch firmware, copies only
+the required `.bin` files, and updates the manifest plus catalog in this repo.

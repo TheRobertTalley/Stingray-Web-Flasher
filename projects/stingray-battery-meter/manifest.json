@@ -1,14 +1,26 @@
 {
-  "name": "AIRSOFT ENERGY INDICATOR",
+  "name": "AIRSOFT ENERGY INDICATOR (battery meter)",
   "version": "2025.12.27+4d24ee8",
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "parts": [
-        { "path": "bootloader.bin", "offset": 0 },
-        { "path": "partitions.bin", "offset": 32768 },
-        { "path": "boot_app0.bin", "offset": 57344 },
-        { "path": "firmware.bin", "offset": 65536 }
+        {
+          "path": "bootloader.bin",
+          "offset": 0
+        },
+        {
+          "path": "partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "boot_app0.bin",
+          "offset": 57344
+        },
+        {
+          "path": "firmware.bin",
+          "offset": 65536
+        }
       ]
     }
   ]
