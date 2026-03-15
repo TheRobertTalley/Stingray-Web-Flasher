@@ -277,7 +277,7 @@
   <main>
     <section class="hero">
       <p class="kicker">Browser-based ESP flashing</p>
-      <h1>Install Stingray firmware without IDEs or CLI tools.</h1>
+      <h1>Install Stingray firmware here.</h1>
       <p class="hero-copy">
         Plug in the device, open this page in Chrome or Edge, and flash compiled
         firmware directly over USB with ESP Web Tools.
@@ -328,11 +328,9 @@
 
     <template id="project-card-template">
       <article class="project-card">
-        <p class="eyebrow" data-board></p>
         <h3 data-name></h3>
         <p class="summary" data-summary></p>
         <ul class="meta">
-          <li data-chip></li>
           <li data-version></li>
           <li data-updated></li>
         </ul>
@@ -358,10 +356,8 @@
 
     const renderProject = (project) => {
       const card = template.content.firstElementChild.cloneNode(true);
-      card.querySelector("[data-board]").textContent = project.board;
       card.querySelector("[data-name]").textContent = project.name;
       card.querySelector("[data-summary]").textContent = project.summary;
-      card.querySelector("[data-chip]").textContent = project.chipFamily;
       card.querySelector("[data-version]").textContent = `Version ${project.version}`;
       card.querySelector("[data-updated]").textContent = `Updated ${project.updated}`;
 

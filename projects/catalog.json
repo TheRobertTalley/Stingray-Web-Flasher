@@ -1,9 +1,8 @@
 [
   {
     "id": "stingray-battery-meter",
-    "name": "Stingray Battery Meter",
-    "summary": "Battery transmitter firmware for the Seeed Studio XIAO ESP32-C3 platform.",
-    "board": "Seeed Studio XIAO ESP32-C3",
+    "name": "AIRSOFT ENERGY INDICATOR",
+    "summary": "Firmware for the Stingray airsoft energy indicator.",
     "chipFamily": "ESP32-C3",
     "version": "2025.12.27+4d24ee8",
     "updated": "2026-02-26",
