@@ -1,6 +1,6 @@
 {
   "name": "AIRSOFT ENERGY INDICATOR (battery meter)",
-  "version": "2025.12.27+4d24ee8",
+  "version": "2026.03.15+978f182",
   "builds": [
     {
       "chipFamily": "ESP32-C3",
