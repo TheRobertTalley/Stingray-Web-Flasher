@@ -1,0 +1,17 @@
+[
+  {
+    "id": "stingray-battery-meter",
+    "name": "Stingray Battery Meter",
+    "summary": "Battery transmitter firmware for the Seeed Studio XIAO ESP32-C3 platform.",
+    "board": "Seeed Studio XIAO ESP32-C3",
+    "chipFamily": "ESP32-C3",
+    "version": "2025.12.27+4d24ee8",
+    "updated": "2026-02-26",
+    "manifest": "projects/stingray-battery-meter/manifest.json",
+    "notes": [
+      "Use Chrome or Microsoft Edge on a desktop or laptop.",
+      "Use a USB data cable, not a charge-only cable.",
+      "Close any serial monitor or IDE window before flashing."
+    ]
+  }
+]
