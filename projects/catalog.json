@@ -1,5 +1,18 @@
 [
   {
+    "id": "stingray-inventory-system",
+    "name": "STINGRAY INVENTORY SYSTEM (T-Dongle S3)",
+    "summary": "WiFi-hosted inventory system for the LILYGO T-Dongle S3 with SD-backed storage, QR item pages, Google backup hooks, and onboard status notifications.",
+    "version": "2026.03.20+c42c4ad",
+    "updated": "2026-03-20",
+    "manifest": "projects/stingray-inventory-system/manifest.json",
+    "notes": [
+      "Use Chrome or Microsoft Edge on a desktop or laptop.",
+      "Use a USB data cable and close any serial monitor before flashing.",
+      "Target device: LILYGO T-Dongle S3 with the current inventory firmware build."
+    ]
+  },
+  {
     "id": "stingray-battery-meter",
     "name": "AIRSOFT ENERGY INDICATOR (battery meter)",
     "summary": "Firmware for the Stingray airsoft energy indicator battery meter.",

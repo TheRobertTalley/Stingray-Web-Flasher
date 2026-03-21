@@ -14,10 +14,12 @@ projects. It should only contain:
 It should never contain firmware source code, private headers, secrets, or
 development configuration from the private build repo.
 
-## Current published project
+## Current published projects
 
 - Device: `AIRSOFT ENERGY INDICATOR (battery meter)`
 - Version, manifest, and binaries are published from the latest release build
+- Device: `STINGRAY INVENTORY SYSTEM (T-Dongle S3)`
+- Version, manifest, and binaries are published from the latest inventory build
 
 Current flash layout:
 
@@ -36,6 +38,12 @@ Stingray-Web-Flasher/
 |-- index.html
 |-- projects/
 |   |-- catalog.json
+|   |-- stingray-inventory-system/
+|   |   |-- manifest.json
+|   |   |-- bootloader.bin
+|   |   |-- partitions.bin
+|   |   |-- boot_app0.bin
+|   |   `-- firmware.bin
 |   `-- stingray-battery-meter/
 |       |-- manifest.json
 |       |-- bootloader.bin
@@ -91,7 +99,8 @@ For PlatformIO-based ESP32 builds, the useful fields in `idedata.json` are:
 5. Commit and deploy.
 
 The landing page is data-driven, so additional projects only need a new folder
-and a new catalog entry.
+and a new catalog entry. The newest published entry is also highlighted on the
+landing page.
 
 ## Automation
 
