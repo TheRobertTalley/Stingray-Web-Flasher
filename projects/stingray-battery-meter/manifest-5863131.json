@@ -1,24 +1,24 @@
 {
   "name": "AIRSOFT ENERGY INDICATOR (battery meter)",
-  "version": "2026.03.22+831a981",
+  "version": "2026.03.26+5863131",
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "parts": [
         {
-          "path": "bootloader-831a981.bin",
+          "path": "bootloader-5863131.bin",
           "offset": 0
         },
         {
-          "path": "partitions-831a981.bin",
+          "path": "partitions-5863131.bin",
           "offset": 32768
         },
         {
-          "path": "boot_app0-831a981.bin",
+          "path": "boot_app0-5863131.bin",
           "offset": 57344
         },
         {
-          "path": "firmware-831a981.bin",
+          "path": "firmware-5863131.bin",
           "offset": 65536
         }
       ]
