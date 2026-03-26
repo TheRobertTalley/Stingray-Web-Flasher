@@ -16,9 +16,9 @@
     "id": "stingray-battery-meter",
     "name": "AIRSOFT ENERGY INDICATOR (battery meter)",
     "summary": "Firmware for the Stingray airsoft energy indicator battery meter.",
-    "version": "2026.03.15+978f182",
-    "updated": "2026-03-15",
-    "manifest": "projects/stingray-battery-meter/manifest.json",
+    "version": "2026.03.22+831a981",
+    "updated": "2026-03-22",
+    "manifest": "projects/stingray-battery-meter/manifest-831a981.json",
     "notes": [
       "Use Chrome or Microsoft Edge on a desktop or laptop.",
       "Use a USB data cable, not a charge-only cable.",
