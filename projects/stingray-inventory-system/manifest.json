@@ -1,6 +1,6 @@
 {
   "name": "STINGRAY INVENTORY SYSTEM (T-Dongle S3)",
-  "version": "2026.03.20+c42c4ad",
+  "version": "2026.03.26+e2caccf",
   "builds": [
     {
       "chipFamily": "ESP32-S3",
