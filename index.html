@@ -202,41 +202,6 @@
       font-size: 2rem;
     }
 
-    .project-card--latest {
-      border-color: rgba(198, 92, 30, 0.35);
-      box-shadow:
-        var(--shadow),
-        0 0 0 0 rgba(198, 92, 30, 0.18);
-      animation: latestPulse 1.8s ease-in-out infinite;
-    }
-
-    .update-badge {
-      justify-self: start;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(198, 92, 30, 0.12);
-      color: #8e3c12;
-      border: 1px solid rgba(198, 92, 30, 0.2);
-      letter-spacing: 0.12em;
-    }
-
-    .update-badge[hidden] {
-      display: none;
-    }
-
-    @keyframes latestPulse {
-      0%, 100% {
-        box-shadow:
-          var(--shadow),
-          0 0 0 0 rgba(198, 92, 30, 0.1);
-      }
-      50% {
-        box-shadow:
-          var(--shadow),
-          0 0 0 10px rgba(198, 92, 30, 0.16);
-      }
-    }
-
     .summary {
       margin: 0;
       color: var(--muted);
@@ -364,7 +329,6 @@
 
     <template id="project-card-template">
       <article class="project-card">
-        <p class="eyebrow update-badge" data-badge hidden>Latest update</p>
         <h3 data-name></h3>
         <p class="summary" data-summary></p>
         <ul class="meta">
@@ -392,12 +356,8 @@
     const grid = document.querySelector("[data-project-grid]");
     const template = document.getElementById("project-card-template");
 
-    const renderProject = (project, isLatest) => {
+    const renderProject = (project) => {
       const card = template.content.firstElementChild.cloneNode(true);
-      if (isLatest) {
-        card.classList.add("project-card--latest");
-        card.querySelector("[data-badge]").hidden = false;
-      }
       card.querySelector("[data-name]").textContent = project.name;
       card.querySelector("[data-summary]").textContent = project.summary;
       card.querySelector("[data-version]").textContent = `Version ${project.version}`;
@@ -472,8 +432,7 @@ if (downloadUrl) {
           const bTime = Date.parse(b.updated ?? "") || 0;
           return bTime - aTime;
         });
-        const latestProjectId = sortedProjects[0]?.id ?? "";
-        grid.replaceChildren(...sortedProjects.map((project) => renderProject(project, project.id === latestProjectId)));
+        grid.replaceChildren(...sortedProjects.map((project) => renderProject(project)));
       }
     } catch (error) {
       console.error(error);
