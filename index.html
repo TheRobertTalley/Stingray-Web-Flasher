@@ -375,6 +375,7 @@
         <div class="install-row">
           <div data-install></div>
           <a data-manifest-link target="_blank" rel="noreferrer">View manifest</a>
+          <a data-download-link target="_blank" rel="noreferrer" hidden>Download</a>
         </div>
       </article>
     </template>
@@ -410,12 +411,39 @@
       }
 
       const installHost = card.querySelector("[data-install]");
-      const installButton = document.createElement("esp-web-install-button");
-      installButton.setAttribute("manifest", project.manifest);
-      installHost.appendChild(installButton);
+const manifestLink = card.querySelector("[data-manifest-link]");
+const manifestPath = typeof project.manifest === "string" ? project.manifest.trim() : "";
+if (manifestPath) {
+  const installButton = document.createElement("esp-web-install-button");
+  installButton.setAttribute("manifest", manifestPath);
+  installHost.appendChild(installButton);
+  manifestLink.href = manifestPath;
+  manifestLink.hidden = false;
+} else {
+  installHost.replaceChildren();
+  manifestLink.hidden = true;
+  manifestLink.removeAttribute("href");
+}
 
-      const manifestLink = card.querySelector("[data-manifest-link]");
-      manifestLink.href = project.manifest;
+const downloadLink = card.querySelector("[data-download-link]");
+const downloadUrl = typeof project.download_url === "string" ? project.download_url.trim() : "";
+if (downloadUrl) {
+  downloadLink.href = downloadUrl;
+  downloadLink.textContent = (typeof project.download_label === "string" && project.download_label.trim())
+    ? project.download_label.trim()
+    : "Download";
+  const downloadName = typeof project.download_name === "string" ? project.download_name.trim() : "";
+  if (downloadName) {
+    downloadLink.setAttribute("download", downloadName);
+  } else {
+    downloadLink.removeAttribute("download");
+  }
+  downloadLink.hidden = false;
+} else {
+  downloadLink.hidden = true;
+  downloadLink.removeAttribute("href");
+  downloadLink.removeAttribute("download");
+}
 
       return card;
     };

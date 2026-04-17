@@ -3,13 +3,28 @@
     "id": "stingray-inventory-system",
     "name": "STINGRAY INVENTORY SYSTEM (T-Dongle S3)",
     "summary": "WiFi-hosted inventory system for the LILYGO T-Dongle S3 with SD-backed storage, QR item pages, Google backup hooks, and onboard status notifications.",
-    "version": "2026.04.12+c3aacda",
-    "updated": "2026-04-12",
-    "manifest": "projects/stingray-inventory-system/manifest-c3aacda.json",
+    "version": "2026.04.17+7bc28fa",
+    "updated": "2026-04-17",
+    "manifest": "projects/stingray-inventory-system/manifest-7bc28fa.json",
     "notes": [
       "Use Chrome or Microsoft Edge on a desktop or laptop.",
       "Use a USB data cable and close any serial monitor before flashing.",
       "Target device: LILYGO T-Dongle S3 with the current inventory firmware build."
+    ]
+  },
+  {
+    "id": "stingray-inventory-desktop-installer",
+    "name": "STINGRAY INVENTORY DESKTOP (Windows Installer)",
+    "summary": "Native Windows installer for Stingray Inventory with SD-compatible data files, desktop/startup integration, and branded shortcuts.",
+    "version": "2026.04.17+7bc28fa",
+    "updated": "2026-04-17",
+    "download_url": "projects/stingray-inventory-system/StingrayInventoryDesktop-Installer-7bc28fa.zip",
+    "download_label": "Download installer (.zip)",
+    "download_name": "StingrayInventoryDesktop-Installer.zip",
+    "notes": [
+      "Extract the zip and run: Install Stingray Inventory Desktop.cmd",
+      "Windows will prompt for Administrator approval (UAC).",
+      "Installs as a system startup task so it runs before login."
     ]
   },
   {
