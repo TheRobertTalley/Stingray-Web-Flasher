@@ -20,6 +20,8 @@ development configuration from the private build repo.
 - Version, manifest, and binaries are published from the latest release build
 - Device: `STINGRAY INVENTORY SYSTEM (T-Dongle S3)`
 - Version, manifest, and binaries are published from the latest inventory build
+- Device: `STINGRAY CHRONOGRAPH (XIAO ESP32-C3)`
+- Version, manifest, and binaries are published from the latest chronograph build
 
 Current flash layout:
 
@@ -44,7 +46,13 @@ Stingray-Web-Flasher/
 |   |   |-- partitions.bin
 |   |   |-- boot_app0.bin
 |   |   `-- firmware.bin
-|   `-- stingray-battery-meter/
+|   |-- stingray-battery-meter/
+|   |   |-- manifest.json
+|   |   |-- bootloader.bin
+|   |   |-- partitions.bin
+|   |   |-- boot_app0.bin
+|   |   `-- firmware.bin
+|   `-- stingray-chronograph/
 |       |-- manifest.json
 |       |-- bootloader.bin
 |       |-- partitions.bin

@@ -1,0 +1,27 @@
+{
+  "name": "STINGRAY CHRONOGRAPH (XIAO ESP32-C3)",
+  "version": "2026.04.19+391e7cf",
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "bootloader-391e7cf.bin",
+          "offset": 0
+        },
+        {
+          "path": "partitions-391e7cf.bin",
+          "offset": 32768
+        },
+        {
+          "path": "boot_app0-391e7cf.bin",
+          "offset": 57344
+        },
+        {
+          "path": "firmware-391e7cf.bin",
+          "offset": 65536
+        }
+      ]
+    }
+  ]
+}
