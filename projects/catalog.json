@@ -5,7 +5,7 @@
     "summary": "WiFi-hosted inventory system for the LILYGO T-Dongle S3 with SD-backed storage, QR item pages, Google backup hooks, and onboard status notifications.",
     "version": "2026.05.06+1434022",
     "updated": "2026-05-06",
-    "manifest": "projects/stingray-inventory-system/manifest-c829814.json",
+    "manifest": "projects/stingray-inventory-system/manifest-1434022.json",
     "notes": [
       "Use Chrome or Microsoft Edge on a desktop or laptop.",
       "Use a USB data cable and close any serial monitor before flashing.",
