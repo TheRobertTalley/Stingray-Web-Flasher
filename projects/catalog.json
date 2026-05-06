@@ -46,9 +46,9 @@
     "id": "stingray-chronograph",
     "name": "STINGRAY CHRONOGRAPH (XIAO ESP32-C3)",
     "summary": "Chronograph firmware for the XIAO ESP32-C3 with dual-gate shot timing, local AP web UI, velocity metrics, and printable report support.",
-    "version": "2026.04.19+391e7cf",
-    "updated": "2026-04-19",
-    "manifest": "projects/stingray-chronograph/manifest-391e7cf.json",
+    "version": "2026.04.26+146821a",
+    "updated": "2026-04-26",
+    "manifest": "projects/stingray-chronograph/manifest-146821a.json",
     "notes": [
       "Use Chrome or Microsoft Edge on a desktop or laptop.",
       "Use a USB data cable and close any serial monitor before flashing.",
