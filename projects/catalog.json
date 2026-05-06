@@ -16,7 +16,7 @@
     "id": "stingray-inventory-desktop-installer",
     "name": "STINGRAY INVENTORY DESKTOP (Windows Installer)",
     "summary": "One-click Windows installer for Stingray Inventory with bundled branding, legacy-install migration, SD-compatible data, LAN access, and startup crash restart.",
-    "version": "2026.05.06+b4f5b1f",
+    "version": "2026.05.06+07488fe",
     "updated": "2026-05-06",
     "download_url": "projects/stingray-inventory-system/StingrayInventoryDesktop-Installer-07488fe.zip",
     "download_label": "Download installer (.zip)",
