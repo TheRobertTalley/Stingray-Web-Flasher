@@ -1,24 +1,24 @@
 {
   "name": "STINGRAY INVENTORY SYSTEM (T-Dongle S3)",
-  "version": "2026.05.06+9f87fa0",
+  "version": "2026.05.06+81ab9da",
   "builds": [
     {
       "chipFamily": "ESP32-S3",
       "parts": [
         {
-          "path": "bootloader-9f87fa0.bin",
+          "path": "bootloader-81ab9da.bin",
           "offset": 0
         },
         {
-          "path": "partitions-9f87fa0.bin",
+          "path": "partitions-81ab9da.bin",
           "offset": 32768
         },
         {
-          "path": "boot_app0-9f87fa0.bin",
+          "path": "boot_app0-81ab9da.bin",
           "offset": 57344
         },
         {
-          "path": "firmware-9f87fa0.bin",
+          "path": "firmware-81ab9da.bin",
           "offset": 65536
         }
       ]

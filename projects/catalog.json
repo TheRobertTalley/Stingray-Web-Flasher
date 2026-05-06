@@ -3,9 +3,9 @@
     "id": "stingray-inventory-system",
     "name": "STINGRAY INVENTORY SYSTEM (T-Dongle S3)",
     "summary": "WiFi-hosted inventory system for the LILYGO T-Dongle S3 with SD-backed storage, QR item pages, Google backup hooks, and onboard status notifications.",
-    "version": "2026.05.06+9f87fa0",
+    "version": "2026.05.06+81ab9da",
     "updated": "2026-05-06",
-    "manifest": "projects/stingray-inventory-system/manifest-9f87fa0.json",
+    "manifest": "projects/stingray-inventory-system/manifest-81ab9da.json",
     "notes": [
       "Use Chrome or Microsoft Edge on a desktop or laptop.",
       "Use a USB data cable and close any serial monitor before flashing.",
@@ -15,15 +15,17 @@
   {
     "id": "stingray-inventory-desktop-installer",
     "name": "STINGRAY INVENTORY DESKTOP (Windows Installer)",
-    "summary": "One-click Windows installer for Stingray Inventory with SD-compatible data, Stingray-branded desktop shortcut, LAN access, and startup crash restart.",
-    "version": "2026.05.06+9f87fa0",
+    "summary": "One-click Windows installer for Stingray Inventory with bundled branding, legacy-install migration, SD-compatible data, LAN access, and startup crash restart.",
+    "version": "2026.05.06+81ab9da",
     "updated": "2026-05-06",
-    "download_url": "projects/stingray-inventory-system/StingrayInventoryDesktop-Installer-9f87fa0.zip",
+    "download_url": "projects/stingray-inventory-system/StingrayInventoryDesktop-Installer-81ab9da.zip",
     "download_label": "Download installer (.zip)",
     "download_name": "StingrayInventoryDesktop-Installer.zip",
     "notes": [
       "Extract the zip and run: Install Inventory.cmd",
       "Windows will prompt for Administrator approval (UAC).",
+      "Upgrades remove old app files and import existing inventory data before the new install is copied in.",
+      "Bundled branding is included unless you supply a custom logo at build time.",
       "Installs as a SYSTEM startup task and restarts after crashes by default.",
       "Settings can turn Auto run and crash restart off on test PCs.",
       "Creates a Windows Firewall rule for TCP 8787 on Private/Public network profiles."
