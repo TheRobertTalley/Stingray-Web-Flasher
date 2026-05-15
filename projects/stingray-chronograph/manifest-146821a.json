@@ -6,19 +6,19 @@
       "chipFamily": "ESP32-C3",
       "parts": [
         {
-          "path": "bootloader.bin",
+          "path": "bootloader-146821a.bin",
           "offset": 0
         },
         {
-          "path": "partitions.bin",
+          "path": "partitions-146821a.bin",
           "offset": 32768
         },
         {
-          "path": "boot_app0.bin",
+          "path": "boot_app0-146821a.bin",
           "offset": 57344
         },
         {
-          "path": "firmware.bin",
+          "path": "firmware-146821a.bin",
           "offset": 65536
         }
       ]
