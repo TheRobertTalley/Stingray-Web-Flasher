@@ -1,27 +1,27 @@
-﻿{
-    "name":  "CARMI CLAYMORE (XIAO ESP32-C3)",
-    "version":  "2026.05.15+b9677c1",
-    "builds":  [
-                   {
-                       "chipFamily":  "ESP32-C3",
-                       "parts":  [
-                                     {
-                                         "path":  "bootloader-b9677c1.bin",
-                                         "offset":  0
-                                     },
-                                     {
-                                         "path":  "partitions-b9677c1.bin",
-                                         "offset":  32768
-                                     },
-                                     {
-                                         "path":  "boot_app0-b9677c1.bin",
-                                         "offset":  57344
-                                     },
-                                     {
-                                         "path":  "firmware-b9677c1.bin",
-                                         "offset":  65536
-                                     }
-                                 ]
-                   }
-               ]
+{
+  "name": "CARMI CLAYMORE (XIAO ESP32-C3)",
+  "version": "2026.05.15+b9677c1",
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "bootloader-b9677c1.bin",
+          "offset": 0
+        },
+        {
+          "path": "partitions-b9677c1.bin",
+          "offset": 32768
+        },
+        {
+          "path": "boot_app0-b9677c1.bin",
+          "offset": 57344
+        },
+        {
+          "path": "firmware-b9677c1.bin",
+          "offset": 65536
+        }
+      ]
+    }
+  ]
 }
