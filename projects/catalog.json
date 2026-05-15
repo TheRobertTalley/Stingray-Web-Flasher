@@ -1,73 +1,86 @@
 [
-  {
-    "id": "carmi-claymore",
-    "name": "CARMI CLAYMORE (XIAO ESP32-C3)",
-    "summary": "Claymore receiver firmware for Seeed Studio XIAO ESP32-C3 with mesh pairing, detonation command handling, and OLED/LED status indicators.",
-    "version": "2026.05.15+b9677c1",
-    "updated": "2026-05-15",
-    "manifest": "projects/carmi-claymore/manifest-b9677c1.json",
-    "notes": [
-      "Use Chrome or Microsoft Edge on a desktop or laptop.",
-      "Use a USB data cable and close any serial monitor before flashing.",
-      "Target device: Seeed Studio XIAO ESP32-C3 running the Carmi-Claymore build."
-    ]
-  },
-  {
-    "id": "stingray-inventory-system",
-    "name": "STINGRAY INVENTORY SYSTEM (T-Dongle S3)",
-    "summary": "WiFi-hosted inventory system for the LILYGO T-Dongle S3 with SD-backed storage, QR item pages, Google backup hooks, and onboard status notifications.",
-    "version": "2026.05.06+19723ee",
-    "updated": "2026-05-06",
-    "manifest": "projects/stingray-inventory-system/manifest-78952c3.json",
-    "notes": [
-      "Use Chrome or Microsoft Edge on a desktop or laptop.",
-      "Use a USB data cable and close any serial monitor before flashing.",
-      "Target device: LILYGO T-Dongle S3 with the current inventory firmware build."
-    ]
-  },
-  {
-    "id": "stingray-inventory-desktop-installer",
-    "name": "STINGRAY INVENTORY DESKTOP (Windows Installer)",
-    "summary": "One-click Windows installer for Stingray Inventory with bundled branding, legacy-install migration, guided folder import, LAN access, and startup crash restart.",
-    "version": "2026.05.07+36b1146",
-    "updated": "2026-05-07",
-    "download_url": "projects/stingray-inventory-system/StingrayInventoryDesktop-Installer-36b1146-20260507.zip",
-    "download_label": "Download installer (.zip)",
-    "download_name": "StingrayInventoryDesktop-Installer.zip",
-    "notes": [
-      "Extract the zip and run: Install Inventory.cmd",
-      "Windows will prompt for Administrator approval (UAC).",
-      "Upgrades remove old app files and import existing inventory data before the new install is copied in.",
-      "Bundled branding is included unless you supply a custom logo at build time.",
-      "Installs as a SYSTEM startup task and restarts after crashes by default.",
-      "Settings can turn Auto run and crash restart off on test PCs.",
-      "Creates a Windows Firewall rule for TCP 8787 on Private/Public network profiles."
-    ]
-  },
-  {
-    "id": "stingray-battery-meter",
-    "name": "AIRSOFT ENERGY INDICATOR (battery meter)",
-    "summary": "Firmware for the Stingray airsoft energy indicator battery meter.",
-    "version": "2026.03.29+8220d97",
-    "updated": "2026-03-29",
-    "manifest": "projects/stingray-battery-meter/manifest-8220d97.json",
-    "notes": [
-      "Use Chrome or Microsoft Edge on a desktop or laptop.",
-      "Use a USB data cable, not a charge-only cable.",
-      "Close any serial monitor or IDE window before flashing."
-    ]
-  },
-  {
-    "id": "stingray-chronograph",
-    "name": "STINGRAY CHRONOGRAPH (XIAO ESP32-C3)",
-    "summary": "Chronograph firmware for the XIAO ESP32-C3 with dual-gate shot timing, local AP web UI, velocity metrics, and printable report support.",
-    "version": "2026.04.26+146821a",
-    "updated": "2026-04-26",
-    "manifest": "projects/stingray-chronograph/manifest-146821a.json",
-    "notes": [
-      "Use Chrome or Microsoft Edge on a desktop or laptop.",
-      "Use a USB data cable and close any serial monitor before flashing.",
-      "Target device: Seeed Studio XIAO ESP32-C3 running the Stingray Chronograph build."
-    ]
-  }
+    {
+        "id":  "carmi-clacker",
+        "name":  "CARMI CLACKER (XIAO ESP32-C3)",
+        "summary":  "Clacker transmitter firmware using dual-trigger detonate send plus original RGB LED state logic: searching blue, connected green, fired red, then post-fired blue blink.",
+        "version":  "2026.05.15+07f8d93",
+        "updated":  "2026-05-15",
+        "manifest":  "projects/carmi-clacker/manifest-07f8d93.json",
+        "notes":  [
+                      "Use Chrome or Microsoft Edge on a desktop or laptop.",
+                      "Use a USB data cable and close any serial monitor before flashing.",
+                      "Target device: Seeed Studio XIAO ESP32-C3 clacker remote with TRIGGER pins on GPIO6 and GPIO7."
+                  ]
+    },
+    {
+        "id":  "carmi-claymore",
+        "name":  "CARMI CLAYMORE (XIAO ESP32-C3)",
+        "summary":  "Claymore receiver firmware for Seeed Studio XIAO ESP32-C3 with mesh pairing, detonation command handling, and OLED/LED status indicators.",
+        "version":  "2026.05.15+b9677c1",
+        "updated":  "2026-05-15",
+        "manifest":  "projects/carmi-claymore/manifest-b9677c1.json",
+        "notes":  [
+                      "Use Chrome or Microsoft Edge on a desktop or laptop.",
+                      "Use a USB data cable and close any serial monitor before flashing.",
+                      "Target device: Seeed Studio XIAO ESP32-C3 running the Carmi-Claymore build."
+                  ]
+    },
+    {
+        "id":  "stingray-inventory-system",
+        "name":  "STINGRAY INVENTORY SYSTEM (T-Dongle S3)",
+        "summary":  "WiFi-hosted inventory system for the LILYGO T-Dongle S3 with SD-backed storage, QR item pages, Google backup hooks, and onboard status notifications.",
+        "version":  "2026.05.06+19723ee",
+        "updated":  "2026-05-06",
+        "manifest":  "projects/stingray-inventory-system/manifest-78952c3.json",
+        "notes":  [
+                      "Use Chrome or Microsoft Edge on a desktop or laptop.",
+                      "Use a USB data cable and close any serial monitor before flashing.",
+                      "Target device: LILYGO T-Dongle S3 with the current inventory firmware build."
+                  ]
+    },
+    {
+        "id":  "stingray-inventory-desktop-installer",
+        "name":  "STINGRAY INVENTORY DESKTOP (Windows Installer)",
+        "summary":  "One-click Windows installer for Stingray Inventory with bundled branding, legacy-install migration, guided folder import, LAN access, and startup crash restart.",
+        "version":  "2026.05.07+36b1146",
+        "updated":  "2026-05-07",
+        "download_url":  "projects/stingray-inventory-system/StingrayInventoryDesktop-Installer-36b1146-20260507.zip",
+        "download_label":  "Download installer (.zip)",
+        "download_name":  "StingrayInventoryDesktop-Installer.zip",
+        "notes":  [
+                      "Extract the zip and run: Install Inventory.cmd",
+                      "Windows will prompt for Administrator approval (UAC).",
+                      "Upgrades remove old app files and import existing inventory data before the new install is copied in.",
+                      "Bundled branding is included unless you supply a custom logo at build time.",
+                      "Installs as a SYSTEM startup task and restarts after crashes by default.",
+                      "Settings can turn Auto run and crash restart off on test PCs.",
+                      "Creates a Windows Firewall rule for TCP 8787 on Private/Public network profiles."
+                  ]
+    },
+    {
+        "id":  "stingray-battery-meter",
+        "name":  "AIRSOFT ENERGY INDICATOR (battery meter)",
+        "summary":  "Firmware for the Stingray airsoft energy indicator battery meter.",
+        "version":  "2026.03.29+8220d97",
+        "updated":  "2026-03-29",
+        "manifest":  "projects/stingray-battery-meter/manifest-8220d97.json",
+        "notes":  [
+                      "Use Chrome or Microsoft Edge on a desktop or laptop.",
+                      "Use a USB data cable, not a charge-only cable.",
+                      "Close any serial monitor or IDE window before flashing."
+                  ]
+    },
+    {
+        "id":  "stingray-chronograph",
+        "name":  "STINGRAY CHRONOGRAPH (XIAO ESP32-C3)",
+        "summary":  "Chronograph firmware for the XIAO ESP32-C3 with dual-gate shot timing, local AP web UI, velocity metrics, and printable report support.",
+        "version":  "2026.04.26+146821a",
+        "updated":  "2026-04-26",
+        "manifest":  "projects/stingray-chronograph/manifest-146821a.json",
+        "notes":  [
+                      "Use Chrome or Microsoft Edge on a desktop or laptop.",
+                      "Use a USB data cable and close any serial monitor before flashing.",
+                      "Target device: Seeed Studio XIAO ESP32-C3 running the Stingray Chronograph build."
+                  ]
+    }
 ]
