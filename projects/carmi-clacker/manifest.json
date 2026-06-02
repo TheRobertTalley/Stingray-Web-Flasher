@@ -1,24 +1,24 @@
 {
     "name":  "CARMI CLACKER (XIAO ESP32-C3)",
-    "version":  "2026.05.19+bde94ff",
+    "version":  "2026.06.02+27366ed",
     "builds":  [
                    {
                        "chipFamily":  "ESP32-C3",
                        "parts":  [
                                      {
-                                         "path":  "bootloader-bde94ff.bin",
+                                         "path":  "bootloader-27366ed.bin",
                                          "offset":  0
                                      },
                                      {
-                                         "path":  "partitions-bde94ff.bin",
+                                         "path":  "partitions-27366ed.bin",
                                          "offset":  32768
                                      },
                                      {
-                                         "path":  "boot_app0-bde94ff.bin",
+                                         "path":  "boot_app0-27366ed.bin",
                                          "offset":  57344
                                      },
                                      {
-                                         "path":  "firmware-bde94ff.bin",
+                                         "path":  "firmware-27366ed.bin",
                                          "offset":  65536
                                      }
                                  ]

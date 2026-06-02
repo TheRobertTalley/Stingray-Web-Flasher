@@ -1,24 +1,24 @@
 {
-  "name": "CARMI CLAYMORE (XIAO ESP32-C3)",
-  "version": "2026.06.02+4d50906",
+  "name": "CARMI CLACKER (XIAO ESP32-C3)",
+  "version": "2026.06.02+27366ed",
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "parts": [
         {
-          "path": "bootloader-4d50906.bin",
+          "path": "bootloader-27366ed.bin",
           "offset": 0
         },
         {
-          "path": "partitions-4d50906.bin",
+          "path": "partitions-27366ed.bin",
           "offset": 32768
         },
         {
-          "path": "boot_app0-4d50906.bin",
+          "path": "boot_app0-27366ed.bin",
           "offset": 57344
         },
         {
-          "path": "firmware-4d50906.bin",
+          "path": "firmware-27366ed.bin",
           "offset": 65536
         }
       ]
