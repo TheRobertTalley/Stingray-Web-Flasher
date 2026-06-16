@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stingray Web Flasher</title>
+  <title>Stingray Downloads</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -277,15 +277,15 @@
 <body>
   <main>
     <section class="hero">
-      <p class="kicker">Browser-based ESP flashing</p>
-      <h1>Install Stingray firmware here.</h1>
+      <p class="kicker">Stingray downloads</p>
+      <h1>Install Stingray tools here.</h1>
       <p class="hero-copy">
-        Plug in the device, open this page in Chrome or Edge, and flash compiled
-        firmware directly over USB with ESP Web Tools.
+        Download the Windows installer for Inventory, or use supported browser
+        flashing profiles for legacy device firmware.
       </p>
       <div class="pill-row">
-        <span class="pill">Compiled binaries only</span>
-        <span class="pill">No source code published</span>
+        <span class="pill">Windows installer first</span>
+        <span class="pill">Compiled artifacts only</span>
         <span class="pill">Static hosting friendly</span>
       </div>
     </section>
@@ -294,36 +294,36 @@
       <article class="info-panel">
         <h2>Before you start</h2>
         <ol class="step-list">
-          <li>Use Chrome or Microsoft Edge on Windows, macOS, or Linux.</li>
-          <li>Plug in the ESP32 with a USB data cable.</li>
-          <li>Close PlatformIO, Arduino Serial Monitor, or any other app that may already own the serial port.</li>
+          <li>For Inventory, download the Windows installer and extract the zip.</li>
+          <li>Run <code>Install Inventory.cmd</code> from the extracted folder.</li>
+          <li>Approve the Windows administrator prompt when the installer asks.</li>
         </ol>
       </article>
 
       <article class="info-panel">
-        <h2>If detection fails</h2>
+        <h2>If install is blocked</h2>
         <ol class="step-list">
-          <li>Try a different USB cable or port.</li>
-          <li>Reconnect the board and refresh the page.</li>
-          <li>For the XIAO ESP32-C3, hold <code>BOOT</code>, tap <code>RESET</code>, then retry if the board does not appear.</li>
+          <li>Right-click <code>Install Inventory.cmd</code> and choose Run as administrator.</li>
+          <li>If Windows SmartScreen appears, choose More info, then Run anyway.</li>
+          <li>Keep the extracted folder together while installing.</li>
         </ol>
       </article>
     </section>
 
     <section class="section-head">
       <div>
-        <p class="section-label">Available firmware</p>
-        <h2>Choose a device profile</h2>
+        <p class="section-label">Available downloads</p>
+        <h2>Choose an installer or profile</h2>
       </div>
       <p class="section-copy">
-        Each profile points to an ESP Web Tools manifest plus the compiled
-        binaries required to flash that board.
+        Inventory is distributed as a Windows installer. Legacy device entries
+        still point to ESP Web Tools manifests where applicable.
       </p>
     </section>
 
     <section class="project-grid" data-project-grid aria-live="polite">
       <article class="project-card loading-card">
-        <p>Loading firmware catalog...</p>
+        <p>Loading download catalog...</p>
       </article>
     </section>
 
@@ -346,8 +346,8 @@
 
     <footer class="page-footer">
       <p>
-        This repository is a flashing portal only. It should contain manifests,
-        compiled binaries, and static site files, but never firmware source.
+        This repository contains public installer, manifest, compiled binary,
+        and static site files only.
       </p>
     </footer>
   </main>
@@ -425,7 +425,7 @@ if (downloadUrl) {
 
       const projects = await response.json();
       if (!Array.isArray(projects) || projects.length === 0) {
-        showMessage("No firmware profiles are currently published.", "error-card");
+        showMessage("No downloads are currently published.", "error-card");
       } else {
         const sortedProjects = [...projects].sort((a, b) => {
           const aTime = Date.parse(a.updated ?? "") || 0;
@@ -437,7 +437,7 @@ if (downloadUrl) {
     } catch (error) {
       console.error(error);
       showMessage(
-        "Unable to load the firmware catalog. Serve this repo over HTTP or HTTPS instead of opening index.html directly.",
+        "Unable to load the download catalog. Serve this repo over HTTP or HTTPS instead of opening index.html directly.",
         "error-card"
       );
     }

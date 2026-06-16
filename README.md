@@ -1,7 +1,7 @@
 # Stingray Web Flasher
 
-Static browser-based firmware installer for Stingray ESP32 devices using
-[ESP Web Tools](https://github.com/esphome/esp-web-tools).
+Static browser-based download page for Stingray Windows installers and ESP32
+firmware installers using [ESP Web Tools](https://github.com/esphome/esp-web-tools).
 
 This repository is intentionally separate from the private PlatformIO firmware
 projects. It should only contain:
@@ -18,8 +18,8 @@ development configuration from the private build repo.
 
 - Device: `AIRSOFT ENERGY INDICATOR (battery meter)`
 - Version, manifest, and binaries are published from the latest release build
-- Device: `STINGRAY INVENTORY SYSTEM (T-Dongle S3)`
-- Version, manifest, and binaries are published from the latest inventory build
+- Download: `STINGRAY INVENTORY DESKTOP (Windows Installer)`
+- Version and zip are published from the latest Windows desktop build
 - Device: `STINGRAY CHRONOGRAPH (XIAO ESP32-C3)`
 - Version, manifest, and binaries are published from the latest chronograph build
 
