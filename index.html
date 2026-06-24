@@ -280,13 +280,13 @@
       <p class="kicker">Stingray downloads</p>
       <h1>Install Stingray tools here.</h1>
       <p class="hero-copy">
-        Download the Windows installer for Inventory, or use supported browser
-        flashing profiles for legacy device firmware.
+        Download the Windows installer for Inventory, or flash supported device
+        firmware directly over USB when you need board-level updates.
       </p>
       <div class="pill-row">
         <span class="pill">Windows installer first</span>
+        <span class="pill">USB flasher available</span>
         <span class="pill">Compiled artifacts only</span>
-        <span class="pill">Static hosting friendly</span>
       </div>
     </section>
 
@@ -294,18 +294,18 @@
       <article class="info-panel">
         <h2>Before you start</h2>
         <ol class="step-list">
-          <li>For Inventory, download the Windows installer and extract the zip.</li>
-          <li>Run <code>Install Inventory.cmd</code> from the extracted folder.</li>
-          <li>Approve the Windows administrator prompt when the installer asks.</li>
+          <li>For Inventory on Windows, download the installer zip and extract it.</li>
+          <li>For direct firmware flashing, use Chrome or Microsoft Edge with a USB data cable.</li>
+          <li>Close any serial monitor or IDE window before flashing a device.</li>
         </ol>
       </article>
 
       <article class="info-panel">
-        <h2>If install is blocked</h2>
+        <h2>If something is blocked</h2>
         <ol class="step-list">
           <li>Right-click <code>Install Inventory.cmd</code> and choose Run as administrator.</li>
+          <li>Reconnect the board and refresh the page if a USB flasher profile does not detect it.</li>
           <li>If Windows SmartScreen appears, choose More info, then Run anyway.</li>
-          <li>Keep the extracted folder together while installing.</li>
         </ol>
       </article>
     </section>
@@ -316,8 +316,9 @@
         <h2>Choose an installer or profile</h2>
       </div>
       <p class="section-copy">
-        Inventory is distributed as a Windows installer. Legacy device entries
-        still point to ESP Web Tools manifests where applicable.
+        Inventory is available as a Windows installer and as a direct T-Dongle
+        S3 firmware profile. Other device entries still use ESP Web Tools
+        manifests where applicable.
       </p>
     </section>
 
